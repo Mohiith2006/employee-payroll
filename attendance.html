@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payroll System - Attendance</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+  <header class="topbar">
+    <img src="assets/img/logo.svg" class="logo" alt="Logo"/>
+    <nav class="nav">
+      <a href="index.html">Dashboard</a>
+      <a href="employees.html">Employees</a>
+      <a href="attendance.html" class="active">Attendance</a>
+      <a href="payroll.html">Payroll</a>
+      <a href="analytics.html">Analytics</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section>
+      <div class="toolbar">
+        <input id="attSearch" type="search" placeholder="Search employee by name or dept" class="input"/>
+        <input id="attMonth" type="month" class="input" style="max-width:160px;" />
+      </div>
+      <div id="attTable"></div>
+    </section>
+    <div id="attModal" class="modal" style="display:none"></div>
+  </main>
+  <script src="assets/js/pages/attendance.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payroll System - Employees</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+  <header class="topbar">
+    <img src="assets/img/logo.svg" class="logo" alt="Logo"/>
+    <nav class="nav">
+      <a href="index.html">Dashboard</a>
+      <a href="employees.html" class="active">Employees</a>
+      <a href="attendance.html">Attendance</a>
+      <a href="payroll.html">Payroll</a>
+      <a href="analytics.html">Analytics</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section>
+      <div class="toolbar">
+        <input id="empSearch" type="search" placeholder="Search by name or dept" class="input"/>
+        <button id="addEmpBtn" class="btn primary">Add Employee</button>
+      </div>
+      <div id="empTable"></div>
+    </section>
+    <div id="empModal" class="modal" style="display:none"></div>
+  </main>
+  <script type="module" src="assets/js/pages/employees.js"></script>
+</body>
+</html>

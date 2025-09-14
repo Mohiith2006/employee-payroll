@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payroll System - Analytics</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(330px,1fr));
+      gap: 24px;
+      align-items: start;
+    }
+    .chart-panel {
+      background: var(--card);
+      border-radius:10px;
+      padding:16px 12px 4px 10px;
+      min-width:285px;
+      margin-bottom: 10px;
+    }
+    .chart-panel canvas {
+      width:100%!important;
+      max-width:280px;
+      height:180px!important;
+      display: block;
+      margin:auto;
+    }
+    .info-panel {padding:8px 0; font-size:.97em; color:#9ca3af;}
+    .top-list {list-style:none; padding:0; margin:0;}
+    .top-list li {margin-bottom:4px;}
+    .compliance-badge { font-size:.95em; background:#ef4444; color:white; border-radius:5px; padding:2px 8px;}
+    .compliance-badge.ok {background:#22c55e;}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <img src="assets/img/logo.svg" class="logo" alt="Logo"/>
+    <nav class="nav">
+      <a href="index.html">Dashboard</a>
+      <a href="employees.html">Employees</a>
+      <a href="attendance.html">Attendance</a>
+      <a href="payroll.html">Payroll</a>
+      <a href="analytics.html" class="active">Analytics</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section>
+      <div class="toolbar" style="justify-content: flex-end">
+        <input id="anaMonth" type="month" class="input" style="max-width:160px;" />
+      </div>
+      <div class="kpi-row" id="kpiRow"></div>
+      <div id="chartsGrid" class="grid"></div>
+    </section>
+  </main>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="assets/js/pages/analytics.js"></script>
+</body>
+</html>
