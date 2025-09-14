@@ -1,0 +1,17 @@
+:root {
+  --bg: #111827;
+  --card: #1f2937;
+  --surface: #243049;
+  --primary: #22c55e;
+  --danger: #ef4444;
+  --muted: #94a3b8;
+  --stroke: #334155;
+}
+
+body {background:var(--bg); color:white; font-family: 'Segoe UI', Arial, sans-serif;}
+.container {max-width: 900px; margin:48px auto; padding:0 24px;}
+.topbar {display:flex; align-items:center; padding:16px 36px; background:var(--surface);}
+.logo {width:34px; height:34px;}
+.nav {margin-left:auto;}
+.nav a {color:#fff; text-decoration:none; margin:0 10px; font-weight:500; opacity:.86; transition:color .2s;}
+.nav a.active, .nav a:hover {color:var(--primary);}

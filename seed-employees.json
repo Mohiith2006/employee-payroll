@@ -1,0 +1,4 @@
+[
+  {"id":"E001","name":"John Doe","department":"Engineering","role":"Software Engineer","baseSalary":60000,"payGrade":"PG-2","status":"Active"},
+  {"id":"E002","name":"Anjali Rao","department":"HR","role":"HR Executive","baseSalary":35000,"payGrade":"PG-1","status":"Active"}
+]

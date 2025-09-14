@@ -1,0 +1,4 @@
+.kpi-row { display: flex; gap: 24px; margin-bottom: 24px; }
+.activity-list { margin-top:18px; color: var(--muted);}
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px,1fr)); gap: 28px;}
+.btn.prime-btn { color: white !important; background: linear-gradient(90deg,#22c55e 60%,#16a34a 100%) !important; font-weight:600;}

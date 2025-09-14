@@ -1,0 +1,4 @@
+[
+  {"employeeId":"E001","period":"2025-08","hours":168,"overtime":12,"unpaidLeaveDays":0},
+  {"employeeId":"E002","period":"2025-08","hours":168,"overtime":0,"unpaidLeaveDays":2}
+]
